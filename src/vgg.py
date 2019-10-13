@@ -50,14 +50,12 @@ def net(data_path, input_image):
 
 
 def _conv_layer(input, weights, bias):
-    conv = tf.nn.conv2d(input, tf.constant(weights), strides=(1, 1, 1, 1),
-            padding='SAME')
+    conv = tf.nn.conv2d(input, tf.constant(weights), strides=(1, 1, 1, 1), padding='SAME')
     return tf.nn.bias_add(conv, bias)
 
 
 def _pool_layer(input):
-    return tf.nn.max_pool(input, ksize=(1, 2, 2, 1), strides=(1, 2, 2, 1),
-            padding='SAME')
+    return tf.nn.max_pool(input, ksize=(1, 2, 2, 1), strides=(1, 2, 2, 1), padding='SAME')
 
 
 def preprocess(image):

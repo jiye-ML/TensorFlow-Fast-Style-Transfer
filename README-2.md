@@ -31,7 +31,7 @@ We added styles from various paintings to a photo of Chicago. Click on thumbnail
 <div align='center'>
 <img src = 'examples/content/chicago.jpg' height="200px">
 </div>
-     
+
 <div align = 'center'>
 <a href = 'examples/style/wave.jpg'><img src = 'examples/thumbs/wave.jpg' height = '200px'></a>
 <img src = 'examples/results/chicago_wave.jpg' height = '200px'>

@@ -17,7 +17,7 @@ def build_parser():
                         metavar='CHECKPOINT', required=True)
 
     parser.add_argument('--in-path', type=str,
-                        dest='in_path', help='in video path',
+                        dest='data', help='in video path',
                         metavar='IN_PATH', required=True)
     
     parser.add_argument('--out-path', type=str,
